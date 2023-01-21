@@ -1,0 +1,90 @@
+1. Create a file with .txt extension (/home/demo.txt). Change the permission set if that file, so that any user can read it, group can read/write & owner can read/write/execute it.
+
+
+Inside the /home directory only root or sudo users can able to create a file. Here i took root user to create a file.
+
+[root@jenkinsserver home]# touch demo.txt
+[root@jenkinsserver home]# getfacl demo.txt 
+# file: demo.txt
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+[root@jenkinsserver home]# ls -la demo.txt 
+-rw-r--r--. 1 root root 0 Jan 21 16:45 demo.txt
+
+# Option 1
+[root@jenkinsserver home]# chmod u+rwx,g+rw,o+r demo.txt
+
+[root@jenkinsserver home]# ls -la demo.txt 
+-rwxrw-r--. 1 root root 0 Jan 21 16:45 demo.txt
+
+# Option 2
+[root@jenkinsserver home]# chmod 764 demo.txt 
+
+[root@jenkinsserver home]# ls -la demo.txt 
+-rwxrw-r--. 1 root root 0 Jan 21 16:45 demo.txt
+
+root@jenkinsserver home]# getfacl /home/demo.txt 
+getfacl: Removing leading '/' from absolute path names
+# file: home/demo.txt
+# owner: root
+# group: root
+user::rwx
+group::rw-
+other::r--
+
+
+#except root user , if you want to access the demo.txt file by multiple users from specific group, we need to create a group and adding all those users into that group.
+
+groupadd guviusers
+
+[root@jenkinsserver home]# grep -i guvi /etc/group
+guviusers:x:1003:
+[root@jenkinsserver home]# usermod -G  guviusers dev
+[root@jenkinsserver home]# usermod -G  guviusers devopskvk
+[root@jenkinsserver home]# grep -i guvi /etc/group
+guviusers:x:1003:dev,devopskvk
+
+
+#second, changing the group name using `chgrp grpname demo.txt` .
+[root@jenkinsserver home]# chgrp guviusers demo.txt
+
+#The above case, those who are in the group they have a access of rw in home/demo.txt.
+[root@jenkinsserver home]# ll demo.txt
+-rwxrw-r--. 1 root guviusers 0 Jan 21 16:45 demo.txt
+
+[root@jenkinsserver home]# getfacl demo.txt
+# file: demo.txt
+# owner: root
+# group: guviusers
+user::rwx
+group::rw-
+other::r--
+
+user dev from the guviusers groups
+[root@jenkinsserver home]# su dev  -> This command will land into the current directory of previous user stayed.
+[dev@jenkinsserver home]$ pwd
+/home
+[dev@jenkinsserver home]$ vi demo.txt
+[dev@jenkinsserver home]$ cat demo.txt 
+this is test file for guvi task updated by dev user
+
+user devopskvk from the guviusers groups
+[devopskvk@jenkinsserver home]$ pwd
+/home
+[devopskvk@jenkinsserver home]$ vi demo.txt
+[devopskvk@jenkinsserver home]$ cat demo.txt
+this is test file for guvi task updated by dev user
+this is test file for guvi task updated by devopskvk user
+
+user guviuser
+[root@jenkinsserver home]# su guviuser
+[guviuser@jenkinsserver home]$ cat demo.txt 
+this is test file for guvi task updated by dev user
+this is test file for guvi task updated by devopskvk user
+[guviuser@jenkinsserver home]$ rm -rf demo.txt  -> except read access the user not able to delete the file.
+rm: cannot remove 'demo.txt': Permission denied
+
