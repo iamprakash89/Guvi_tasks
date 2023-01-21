@@ -1,3 +1,6 @@
+OS : Rocky Linux 8
+
+
 1. Create 20 files with .txt extensions and rename the first 5 files to .yml extension
 
 # script has been created for the task1. executing the `sh filecreaterename.sh` command to complete the task
