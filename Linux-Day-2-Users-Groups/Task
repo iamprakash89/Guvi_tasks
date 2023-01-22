@@ -1,0 +1,91 @@
+OS: Rokcy Linux 8.7
+
+1. Create a file with .txt extension (/home/demo.txt). Change the permission set if that file, so that any user can read it, group can read/write & owner can read/write/execute it.
+
+
+Inside the /home directory only root or sudo users can able to create a file. Here i took root user to create a file.
+
+[root@server home]# touch demo.txt
+[root@server home]# getfacl demo.txt 
+# file: demo.txt
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+[root@server home]# ls -la demo.txt 
+-rw-r--r--. 1 root root 0 Jan 21 16:45 demo.txt
+
+# Option 1
+[root@server home]# chmod u+rwx,g+rw,o+r demo.txt
+
+[root@server home]# ls -la demo.txt 
+-rwxrw-r--. 1 root root 0 Jan 21 16:45 demo.txt
+
+# Option 2
+[root@server home]# chmod 764 demo.txt 
+
+[root@server home]# ls -la demo.txt 
+-rwxrw-r--. 1 root root 0 Jan 21 16:45 demo.txt
+
+root@server home]# getfacl /home/demo.txt 
+getfacl: Removing leading '/' from absolute path names
+# file: home/demo.txt
+# owner: root
+# group: root
+user::rwx
+group::rw-
+other::r--
+
+
+#except root user , if you want to access the demo.txt file by multiple users from specific group, we need to create a group and adding all those users into that group.
+
+groupadd guviusers
+
+[root@server home]# grep -i guvi /etc/group
+guviusers:x:1003:
+[root@server home]# usermod -G  guviusers dev
+[root@server home]# usermod -G  guviusers devopskvk
+[root@server home]# grep -i guvi /etc/group
+guviusers:x:1003:dev,devopskvk
+
+
+#second, changing the group name using `chgrp grpname demo.txt` .
+[root@server home]# chgrp guviusers demo.txt
+
+#The above case, those who are in the group they have a access of rw in home/demo.txt.
+[root@server home]# ll demo.txt
+-rwxrw-r--. 1 root guviusers 0 Jan 21 16:45 demo.txt
+
+[root@server home]# getfacl demo.txt
+# file: demo.txt
+# owner: root
+# group: guviusers
+user::rwx
+group::rw-
+other::r--
+
+user dev from the guviusers groups
+[root@server home]# su dev  -> This command will land into the current directory of previous user stayed.
+[dev@server home]$ pwd
+/home
+[dev@server home]$ vi demo.txt
+[dev@server home]$ cat demo.txt 
+this is test file for guvi task updated by dev user
+
+user devopskvk from the guviusers groups
+[devopskvk@server home]$ pwd
+/home
+[devopskvk@server home]$ vi demo.txt
+[devopskvk@server home]$ cat demo.txt
+this is test file for guvi task updated by dev user
+this is test file for guvi task updated by devopskvk user
+
+user guviuser
+[root@server home]# su guviuser
+[guviuser@server home]$ cat demo.txt 
+this is test file for guvi task updated by dev user
+this is test file for guvi task updated by devopskvk user
+[guviuser@server home]$ rm -rf demo.txt  -> except read access the user not able to delete the file.
+rm: cannot remove 'demo.txt': Permission denied
