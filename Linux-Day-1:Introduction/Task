@@ -1,4 +1,6 @@
 - Document has been uploaded
+https://github.com/devopskvk/Guvi_tasks/blob/main/Linux-Day-1:Introduction/Day1_Task.doc
+
 
 OS : Rocky Linux 8
 
@@ -26,6 +28,38 @@ do
         mv text$i.txt text$i.yml
 done
 
+
+[devopskvk@jenkinsserver ~]$ ll
+total 4
+-rwxrwxr-x. 1 devopskvk devopskvk 379 Jan 22 08:56 filecreaterename.sh
+[devopskvk@jenkinsserver ~]$ sh filecreaterename.sh 
+The new files are created 
+The first 5 files are renamed 
+
+[devopskvk@jenkinsserver ~]$ ll
+total 4
+-rwxrwxr-x. 1 devopskvk devopskvk 379 Jan 22 08:56 filecreaterename.sh
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text10.txt
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text11.txt
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text12.txt
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text13.txt
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text14.txt
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text15.txt
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text16.txt
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text17.txt
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text18.txt
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text19.txt
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text1.yml   <======
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text20.txt
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text2.yml   <======
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text3.yml   <======
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text4.yml   <======
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text5.yml   <======
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text6.txt   
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text7.txt   
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text8.txt   
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text9.txt   
+
 ===========================================================================================================================
 
 2. Print the latest created top 5 files among the total no of files"
@@ -33,6 +67,19 @@ done
 # the command will print the task 2 requrirement.
 ls -ltr | tail -n 5
 or 
-ls -ltr | tail 5
+ls -ltr | tail -5
+
+[devopskvk@jenkinsserver ~]$ ls -ltr | tail -n 5
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text16.txt
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text17.txt
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text18.txt
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text19.txt
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text20.txt
+[devopskvk@jenkinsserver ~]$ ls -ltr | tail -5
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text16.txt
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text17.txt
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text18.txt
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text19.txt
+-rw-rw-r--. 1 devopskvk devopskvk   0 Jan 22 09:16 text20.txt
 
 ===========================================================================================================================
