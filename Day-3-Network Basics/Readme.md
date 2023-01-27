@@ -17,8 +17,17 @@ OS: Amazon linux
 
 
 <h1> 2. How do I find my CPU/memory usage of my server? </h1>
-
+    
+    The below commands used for verifyung the conectivity beween two nodes.
+     1. top (it shows CPU and RAM memory)
+     2. sar (It shows the hisotry of CPU utilization)
+     3. sar -r  (It shows the hisotry of memory utilization)
+     4. sar 2 5 ( display sar current utilization with 5 times interval of 2 seconds)
+     5. mpstat command for displaying the CPU utilization
+     6. vmstat command for displaying the memory utilization
+     
 ![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day-3-Network%20Basics/images/Day3_Task2.png)
+![alt text(https://github.com/devopskvk/Guvi_tasks/blob/main/Day-3-Network%20Basics/images/Day3_Task2_mpstat.png)
 
 
 <h1> 3. Test the connectivity between 2 nodes? </h1>
