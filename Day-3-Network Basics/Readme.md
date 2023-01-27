@@ -1,4 +1,7 @@
 Day-3 Tasks
+Platform: AWS
+OS: Amazon linux
+
 
 <h1> 1. Get me IP address of particular domain (guvi.in) </h1>
 
