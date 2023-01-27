@@ -1,4 +1,5 @@
-Day-3 Tasks
+<h3> Day-3 Tasks</h3>
+
 Platform: AWS
 OS: Amazon linux
 
