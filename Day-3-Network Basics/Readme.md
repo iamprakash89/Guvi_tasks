@@ -1,7 +1,7 @@
 <h3> Day-3 Tasks</h3>
 
-Platform: AWS
-OS: Amazon linux
+Platform: AWS  
+OS: Amazon linux  
 
 
 <h1> 1. Get me IP address of particular domain (guvi.in) </h1>
