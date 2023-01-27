@@ -14,6 +14,7 @@ Day-3 Tasks
 
 
 <h1> 2. How do I find my CPU/memory usage of my server? </h1>
+
 ![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day-3-Network%20Basics/images/Day3_Task2.png)
 
 
