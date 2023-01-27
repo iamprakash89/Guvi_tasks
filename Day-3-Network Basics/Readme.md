@@ -18,6 +18,18 @@ Day-3 Tasks
 ![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day-3-Network%20Basics/images/Day3_Task2.png)
 
 
+<h1> 3. Test the connectivity between 2 nodes? </h1>
+
+     The below commands used for verifyung the conectivity beween two nodes.
+     1.nmap
+     2.ping (sometimes you cannot able to ping the ip address even the connection established, becuase the ICMP protocol will be blocked from the firewall end due to the ddos attack)
+     3.ssh
+     4.traceroute
+
+![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day-3-Network%20Basics/images/Day3_Task3.png)
+![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day-3-Network%20Basics/images/Day3_Task3_ssh.png)
+![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day-3-Network%20Basics/images/Day3_Task3_traceroute.png)
+
 
 <h1> 4. I have deployed an application in guvi.com:9000, and logs shows my app is running, but I’m unable to view the page. Check whether my port is open or not ? </h1>
 
