@@ -1,8 +1,8 @@
 Day-3 Tasks
 
 <h1> 1. Get me IP address of particular domain (guvi.in) </h1>
-    The below commands used for identifying the IP address of the guvi.in domain.
-    ping -c 3 guvi.in  
+    <p1>The below commands used for identifying the IP address of the guvi.in domain.</p1>
+    <p2>ping -c 3 guvi.in  <p2>
     nslookup guvi.in
     dig guvi.in
     you can also use the online ipchecker webiste to identify the IP address (MXtoolbox->DNS Lookup)
