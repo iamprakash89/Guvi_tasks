@@ -11,8 +11,12 @@ Day-3 Tasks
 ![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day-3-Network%20Basics/images/Day3_Task1.png)
 ![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day-3-Network%20Basics/images/Day3_Task1_dig.png)
 
+
+
 <h1> 2. How do I find my CPU/memory usage of my server? </h1>
 ![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day-3-Network%20Basics/images/Day3_Task2.png)
+
+
 
 <h1> 4. I have deployed an application in guvi.com:9000, and logs shows my app is running, but I’m unable to view the page. Check whether my port is open or not ? </h1>
 
