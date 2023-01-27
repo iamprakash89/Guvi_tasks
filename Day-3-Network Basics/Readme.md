@@ -47,7 +47,7 @@ OS: Amazon linux
 <h1> 4. I have deployed an application in guvi.com:9000, and logs shows my app is running, but I’m unable to view the page. Check whether my port is open or not ? </h1>
 
     The below commands will help you to identify the port has been opened or not.
-    1. nc -vz guvi.com 9000 
+    1. nc -vz guvi.com 9000
     2. namp 9000 guvi.com
     3.telnet guvi.com 9000
     4. The output shows clearly the port has been not opened form the firewall end.
