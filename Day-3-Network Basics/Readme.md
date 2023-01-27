@@ -28,7 +28,7 @@ OS: Amazon linux
      6. vmstat command for displaying the memory utilization
      
 ![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day-3-Network%20Basics/images/Day3_Task2.png)
-![alt text(https://github.com/devopskvk/Guvi_tasks/blob/main/Day-3-Network%20Basics/images/Day3_Task2_mpstat.png)
+![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day-3-Network%20Basics/images/Day3_Task2_mpstat.png)
 
 
 <h1> 3. Test the connectivity between 2 nodes? </h1>
