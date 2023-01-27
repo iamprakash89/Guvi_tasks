@@ -3,15 +3,10 @@ Day-3 Tasks
 <h1> 1. Get me IP address of particular domain (guvi.in) </h1>
 
      1. The below commands used for identifying the IP address of the guvi.in domain.   
-     1. ping -c 3 guvi.in   
-     1. nslookup guvi.in   
-    dig guvi.in   
-    you can also use the online ipchecker webiste to identify the IP address (MXtoolbox->DNS Lookup)   
-    #### PreRequisites
-1. Jenkins - Get help [here](https://www.youtube.com/watch?v=M32O4Yv0ANc)
-1. Ansible - Get help [here](https://www.youtube.com/watch?v=79xFyOc_eEY)
-1. Setup ansible client and install docker. [here](https://www.youtube.com/watch?v=nMLQgXf8tZ0)
-1. Docker Hub account 
+     2. ping -c 3 guvi.in   
+     3. nslookup guvi.in   
+     4. dig guvi.in   
+     5. you can also use the online ipchecker webiste to identify the IP address (MXtoolbox->DNS Lookup)   
 
 ![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day-3-Network%20Basics/images/Day3_Task1.png)
 ![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day-3-Network%20Basics/images/Day3_Task1_dig.png)
