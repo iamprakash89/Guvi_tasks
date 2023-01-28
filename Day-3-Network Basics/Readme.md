@@ -12,8 +12,11 @@ OS: Amazon linux
      3. dig guvi.in   
      4. you can also use the online ipchecker webiste to identify the IP address (MXtoolbox->DNS Lookup)   
 
-![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day-3-Network%20Basics/images/Day3_Task1.png)
-![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day-3-Network%20Basics/images/Day3_Task1_dig.png)
+![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day-3-Network%20Basics/images/Ping_task1.PNG)
+
+![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day-3-Network%20Basics/images/nslookup_task1.PNG)
+
+![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day-3-Network%20Basics/images/dig_task1.png)
 
 
 
