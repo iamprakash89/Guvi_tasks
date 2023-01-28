@@ -18,6 +18,7 @@ OS: Amazon linux
 
 ![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day-3-Network%20Basics/images/dig_task1.png)
 
+![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day-3-Network%20Basics/images/mxtoolbox.png)
 
 
 <h1> 2. How do I find my CPU/memory usage of my server? </h1>
