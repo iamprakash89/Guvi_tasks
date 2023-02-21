@@ -37,3 +37,5 @@ command used to replace the string ```sed -i '5,${/welcome/s/give/learning/g}' f
 After: 
 
 ![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day7-ShellScriptingPart-2/task2_1.png)
+
+Note: I used question as a input.
