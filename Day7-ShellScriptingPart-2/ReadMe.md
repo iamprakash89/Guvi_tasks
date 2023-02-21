@@ -2,9 +2,10 @@
 
 ####  TASK1 Create a shell script to print the HTTP error code of guvi.in & print, the success/failure message based on the error code response 
 
-The below script will check teh status code of the domain name. IF the status code is 200 then it will display a up and running otherwise the output shows not accessible.
+The below script will check the status code of the domain name. IF the status code is 200 then it will display a up and running  status otherwise the output shows not accessible.
 
 --write-out used for capturing the status code.
+
 --silent and --output options are used to prevent curl from printing any output to the console.
 
 ```
