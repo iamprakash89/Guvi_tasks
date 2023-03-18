@@ -11,7 +11,10 @@ do
    # commands to be executed
 done
 ```
+Example
+=======
 
+![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day8/image/forloop.png)
 
 While loop:
 ===========
@@ -22,6 +25,11 @@ do
    # commands to be executed
 done
 ```
+
+Example
+=======
+
+![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day8/image/whileloop.png)
 
 
 Until loop:
@@ -34,6 +42,10 @@ do
 done
 ```
 
+Example
+=======
+
+![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day8/image/untilloop.png)
 
 Select loop:
 ============
@@ -44,3 +56,8 @@ do
    # commands to be executed
 done
 ```
+
+Example
+=======
+
+![alt text](https://github.com/devopskvk/Guvi_tasks/blob/main/Day8/image/selectloop.PNG)
