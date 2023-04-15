@@ -31,8 +31,9 @@ Step 1: Create a Two instances from EC2 launch instance
 
 Step 2: Before creating a Loadbalancer, we need to create a Target groups. this target groups contians the Ec2 instances which is going to handled by Load balancer.
         ![alt text](https://github.com/iamprakash89/Guvi_tasks/blob/main/AWS-%20Day%20-4/images/screencapture-us-east-1-console-aws-amazon-ec2-home-2023-04-15-09_03_11.png)
-Step 3: Add your Target resources ion your Target group        
-        ![alt text](![alt text](https://github.com/iamprakash89/Guvi_tasks/blob/main/AWS-%20Day%20-4/images/screencapture-us-east-1-console-aws-amazon-ec2-home-2023-04-15-09_04_32.png)
+        
+Step 3: Add your Target resources in your Target group        
+        ![alt text](https://github.com/iamprakash89/Guvi_tasks/blob/main/AWS-%20Day%20-4/images/screencapture-us-east-1-console-aws-amazon-ec2-home-2023-04-15-09_04_32.png)
         ![alt text](https://github.com/iamprakash89/Guvi_tasks/blob/main/AWS-%20Day%20-4/images/screencapture-us-east-1-console-aws-amazon-ec2-home-2023-04-15-09_05_10.png)
         ![alt text](https://github.com/iamprakash89/Guvi_tasks/blob/main/AWS-%20Day%20-4/images/screencapture-us-east-1-console-aws-amazon-ec2-home-2023-04-15-09_05_47.png)
  
