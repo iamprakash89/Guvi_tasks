@@ -13,6 +13,7 @@ Select the new Item for creating the project.
  ![alt text](https://github.com/iamprakash89/Guvi_tasks/blob/main/Day_20/images/3.png)
  
 Press an OK button to create a project. The new page landing into configuration. Here you need to specify the project description and other configurations.
+
  ![alt text](https://github.com/iamprakash89/Guvi_tasks/blob/main/Day_20/images/5.png)
  ![alt text](https://github.com/iamprakash89/Guvi_tasks/blob/main/Day_20/images/6.png)
  ![alt text](https://github.com/iamprakash89/Guvi_tasks/blob/main/Day_20/images/7.png)
