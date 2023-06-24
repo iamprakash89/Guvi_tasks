@@ -1,1 +1,4 @@
-Launch jenkins and explore creating projects, users
+Launch Jenkins and explore creating projects, users
+
+Create a new project.
+
