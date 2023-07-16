@@ -80,5 +80,5 @@ Jenkins Login Page, configuration Settings, execute step commands)
  
  ![alt text](https://github.com/iamprakash89/Guvi_tasks/blob/main/capstone_project/images/applicationserver1.PNG)
  ![alt text](https://github.com/iamprakash89/Guvi_tasks/blob/main/capstone_project/images/applicationserver2.PNG)
- ![alt text](https://github.com/iamprakash89/Guvi_tasks/blob/main/capstone_project/images/applicationserver3.PNG)
+
  
